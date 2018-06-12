@@ -5,10 +5,4 @@ Reverse an Array
 Write a function called 'reverseArray to reverse a bunch of values in reverse.
 
 ## Solution
-function reverseArray (arr) {
-  let newArray = [];
-  for (let i = arr.length-1; i >= 0; i--) {
-    newArray.push(arr[i]);
-  }
-  return newArray;
-}
+![alt text](data-structures-and-algorithms/1-array-reverse/20180612_142136.jpg)
