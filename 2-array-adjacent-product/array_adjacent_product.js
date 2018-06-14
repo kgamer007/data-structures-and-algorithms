@@ -1,4 +1,6 @@
+
 'use strict';
+
 const MAP = module.exports = {};
 MAP.findMAP = (x, y, matrix) => {
   const centerVal = matrix[x][y];
