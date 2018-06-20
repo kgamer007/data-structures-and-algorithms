@@ -7,4 +7,4 @@ Write the following methods for the linked list class.
 .insertBefore(value, newVal): add a new node with the given newValue immediately before the first value node .insertAfter(value, newVal): add a new node with the given newValue immediately after the first value node You have access to the Node class and all the properties on the Linked List class.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![alt text](https://github.com/kgamer007/data-structures-and-algorithms/blob/master/assets/07-linked-list.jpg)
