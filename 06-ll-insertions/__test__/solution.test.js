@@ -2,7 +2,7 @@
 
 const LinkedList = require('../lib/solution');
 
-describe('main.js', () => {
+describe('solution.js', () => {
   test('#APPEND: return a node at the end of list', () => {
     const testList = new LinkedList();
     testList.append(5);
