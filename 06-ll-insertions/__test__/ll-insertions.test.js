@@ -1,6 +1,6 @@
 'use strict';
 
-const LinkedList = require('../lib/solution');
+const LinkedList = require('../lib/ll-insertions');
 
 describe('main.js', () => {
   test('#APPEND: return a node at the end of list', () => {
