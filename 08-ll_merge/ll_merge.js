@@ -1,26 +1,30 @@
 'use strict';
 
-const Node = require('./node');
-
-function mergeLists(listOne, listTwo) {
-  let currentNode = listOne.head;
-  let currentNode2 = listTwo.head;
-
-  while (currentNode.next) {
-
-    if (!currentNode) {
-      currentNode = listOne.head;
-    }
-
-    if (!temp) {
-      temp = currentNode.next;
-    }
-
-    currentNode.next = listTwo.head;
-    currentNode = currentNode.next;
-    listTwo.head = listTwo.head.next;
-    currentNode.next = temp;
-    temp = temp.next;
-    currentNode = currentNode.next;
+module.exports = class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
   }
-}
+};
+
+  var mergeTwo = () => (a, b) {
+    let nodeA = a.head;
+    let nodeB = b.head;
+
+    let counter = 0;
+
+    while (nodeB) {
+      const nextNodeA = nodeA.next;
+      const nextNodeB = nodeB.next;
+
+      if (counter % 2 === 1) {
+        nodeA.next = nextNodeA;
+      } else if (counter % 2 === 0) {
+        nodeB.next = nextNodeB;
+      }
+      counter += 1;
+      nodeA = nodeA.next;
+      nodeB = nodeB.next;
+    }
+    return a;
+  };
