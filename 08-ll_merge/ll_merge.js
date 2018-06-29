@@ -7,7 +7,7 @@ module.exports = class Node {
   }
 };
 
-  var mergeTwo = () => (a, b) {
+  var mergeLists = () => (a, b) {
     let nodeA = a.head;
     let nodeB = b.head;
 
